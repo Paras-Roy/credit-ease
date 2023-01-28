@@ -4,6 +4,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    backdrop-filter: blur(20px);
 
     .navContainer{
         width: min(1400px, 90vw);

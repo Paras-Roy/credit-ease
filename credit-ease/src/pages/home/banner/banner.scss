@@ -1,0 +1,92 @@
+@import "../../../style.scss";
+
+.banner{
+    min-height: calc( 100vh - 5em );
+    display: flex;
+    justify-content: center;
+    background-image: url(../../../../public/wave.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @include landscapeTablet{
+        background-image: url(../../../../public/blob.svg);
+        
+        background-position: right;
+    }
+
+    @include mobile{
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .bannerContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: min(1400px, 90vw);
+        min-height: 100%;
+        background-image: url(../../../../public/home_banner.jpg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right;
+        @include landscapeTablet{
+            background: none;
+            backdrop-filter: blur(30px);
+        }
+        @include tablet{
+            background: none;
+            backdrop-filter: blur(50px);
+        }
+
+        @include mobile{
+            width: 100%;
+            padding: 0 5vw;
+        }
+
+        .bannerBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                font-family: Display Deep;
+                font-size: 5em;
+                margin-bottom: 0;
+                @include landscapeTablet{
+                    font-size: 4em;
+                }
+            }
+            h2{
+                font-family: Display Deep;
+                font-size: 5em;
+                margin-top: 0;
+                margin-bottom: 20px;
+                @include landscapeTablet{
+                    font-size: 4em;
+                }
+            }
+            span{
+                font-family: Display Regular;
+                font-size: 1.5em;
+                
+            margin-bottom: 50px;
+            }
+
+            .button{
+            display: flex;
+            margin-bottom: 150px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 22px;
+            cursor: pointer;
+            width: 220px;
+            height: 45px;
+            background-image: linear-gradient(to bottom right, #fcc328, #fd5501);
+
+            color: white;
+            font-family: Display Heavy;
+            font-size: 1.2em;
+            }
+        }
+    }
+}
