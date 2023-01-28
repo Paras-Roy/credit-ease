@@ -7,29 +7,29 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import "./index.css"
+import './style.scss'
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div><Home/></div>,
+      element: <div><Navbar/><Home/><Footer/></div>,
     },
     {
       path: "/about",
-      element: <div><About/></div>,
+      element: <div><Navbar/><About/><Footer/></div>,
     },
     {
       path: "/team",
-      element: <div><Team/></div>,
+      element: <div><Navbar/><Team/><Footer/></div>,
     },
   ]);
 
   return (
     <div>
-      <Navbar/>
       <RouterProvider router={router} />
-      <Footer/>
     </div>
   );
 }

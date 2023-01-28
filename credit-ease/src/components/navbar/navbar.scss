@@ -1,0 +1,66 @@
+@import "../../style.scss";
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .navContainer{
+        width: min(1400px, 90vw);
+        height: 5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logoContainer{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            span{
+                font-family: Display Heavy;
+                font-size: 1.5em;
+                @include tablet{
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .pages{
+            display: flex;
+            width: max(170px, 30%);
+            justify-content: space-between;
+            align-items: center;
+
+            span{
+                font-family: Display Regular;
+                text-decoration: none;
+                color: black;
+                font-size: 1.2em;
+                @include tablet{
+                    font-size: 1em;
+                }
+            }
+
+        }
+
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 22px;
+            cursor: pointer;
+            width: 170px;
+            height: 45px;
+            background-image: linear-gradient(to bottom right, #3BA7FF, #3349B3);
+
+            color: white;
+            font-family: Display Heavy;
+            font-size: 1.2em;
+            
+            @include tablet{
+                display: none;
+            }
+        }
+    }   
+}
