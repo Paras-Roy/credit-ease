@@ -1,0 +1,161 @@
+@import "../../../style.scss";
+
+header h1 {
+    font-family: Display Thin;
+    font-size: 4em;
+    background-image: linear-gradient(to left, #6D27E8, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.form {
+    min-height: calc(100vh - 5em);
+    padding: 30px 0;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .formContainer {
+        width: min(1400px, 90vw);
+        background-color: #eeeeee;
+        display: flex;
+        padding: 50px;
+        border-radius: 20px;
+        gap: 30px;
+
+        .formLeft {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @include landscapeTablet {
+                width: min(80vw, 500px);
+                align-self: center;
+                align-items: center;
+            }
+        }
+
+        .formRight {
+            margin-top: 100px;
+            align-self: flex-start;
+            flex: 0.9;
+            display: flex;
+
+            @include landscapeTablet {
+                width: min(80vw, 500px);
+                align-self: center;
+            }
+        }
+
+        @include landscapeTablet {
+            flex-direction: column;
+            align-self: center;
+            padding: 20px 0;
+        }
+    }
+}
+
+.formCard {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 30px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+
+    @include mobile {
+        
+    background-color: #eee;
+        padding: 5px;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .formTitle {
+
+        background-image: linear-gradient(to top right, #fdfdfd, #d3daee);
+        border-radius: 10px;
+        padding: 10px;
+
+        div {
+            font-family: Display Regular;
+            font-size: 1.8em;
+            color: #6D27E8;
+
+            @include mobile {
+                font-size: 1.3em;
+            }
+        }
+
+        span {
+            font-family: Display Regular;
+            color: #aaa;
+        }
+
+        ;
+    }
+
+    input,
+    select {
+        padding: 10px;
+        border: none;
+        border-bottom: 1px #bbb solid;
+        font-family: Display Thin;
+        font-size: 1.2em;
+        color: #555;
+
+        @include mobile {
+            font-size: 1.3em;
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: right;
+        gap: 30px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .btn {
+            transition: background-color 200ms;
+            cursor: pointer;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+            font-family: Display Regular;
+            font-size: 1.5em;
+            color: white;
+        }
+
+        .reset {
+            color: #777;
+        }
+
+        .reset:hover {
+            background-color: #ddd;
+        }
+
+        .submit {
+            background-color: #6D27E8;
+        }
+
+        .submit:hover {
+            background-color: #6023caa5;
+        }
+    }
+
+}
+
+.result{
+    min-height: calc(100vh - 5em);
+}
