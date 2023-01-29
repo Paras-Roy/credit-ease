@@ -14,6 +14,12 @@
   src: local("SF-Pro-Display-Black"),
     url("../public/fonts/SF-Pro-Display-Black.otf") format("OpenType");
 }
+
+@font-face {
+  font-family: "Display Thin";
+  src: local("SF-Pro-Display-Light"),
+    url("../public/fonts/SF-Pro-Display-Medium.otf") format("OpenType");
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

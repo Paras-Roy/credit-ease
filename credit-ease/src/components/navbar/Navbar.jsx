@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navContainer">
                 <div className="logoContainer">
-                    <SpeedIcon style={{ fontSize: 30 }}/>
+                    <SpeedIcon style={{ fontSize: 30 }} />
                     <span>Credit Ease</span>
                 </div>
                 <div className="pages">
