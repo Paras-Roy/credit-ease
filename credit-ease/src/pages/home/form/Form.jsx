@@ -5,7 +5,12 @@ const Form = () => {
 
     const formRef = useRef(null);
     const [formData, setFormData] = useState({});
-    const [name, setName] = useState({});
+    const [resultData, setResultData] = useState({
+        value: 1,
+        recc: ["All good"],
+        grade: "hi"
+
+    })
     const [showResult, setShowResult] = useState(false)
 
     const handleChange = (event) => {
@@ -40,6 +45,7 @@ const Form = () => {
 
                 setShowResult(true);
                 console.log(data)
+                setResultData(data)
                 // Handle the response data
             });
     }
@@ -58,7 +64,7 @@ const Form = () => {
                         <div className="formLeft">
                             <div className="formCard">
                                 <div className="formTitle">
-                                    <div>Set Personal Info{name.score}</div>
+                                    <div>Set Personal Info</div>
                                     <span>Fill in required personal info</span>
                                 </div>
                                 <input type="text" name="name" placeholder="Your Name" onChange={handleChange} required />
@@ -198,7 +204,33 @@ const Form = () => {
     else if (showResult) {
         return (
             <div className="result">
+                <div className="resultContainer">
+                    <div className="topSection">
+                        <div className="left">
+                            <h1>{formData.name}</h1>
+                            <div className="score">
+                                <span>{resultData.value}</span>
+                                <div>Predicted Score</div>
+                            </div>
+                        </div>
+                        <div className="right">
+                            <h1>Credit Worthiness</h1>
+                            <div className="score">
+                                <span>{resultData.grade}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="bottomSection">
 
+                        <div className="reccContainer">
+                            <div className='title'>Nearest Neighbour</div>
+                            <div className="card">
+                                <span>{resultData.recc}</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         )
     }

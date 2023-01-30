@@ -158,4 +158,105 @@ header h1 {
 
 .result{
     min-height: calc(100vh - 5em);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .resultContainer{
+        width: min(1400px, 90vw);
+        padding: 40px;
+        border-radius: 40px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        background-color: #ddd;
+
+        .topSection{
+            display: flex;
+            gap: 20px;
+
+            .left{
+                flex:2;
+                background-color: black;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+                h1{
+                    font-family: Display Thin;
+                    color: white;
+                }
+                .score{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    span{
+                        font-size: 10em;
+                        color: white;
+                        font-family: Display Regular;
+                    }
+                    div{
+                        color: white;
+                        font-family: Display Thin;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            .right{
+                flex:3;
+                background-color: #95cfd9;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                gap: 50px;
+
+                h1{
+                    font-family: Display Thin;
+                    color: #555;
+                    font-size: 2em;
+                }
+                .score{
+                    span{
+                        font-family: Display Regular;
+                        font-size: 6em;
+
+                    }
+                }
+            }
+
+        }
+
+        .bottomSection{
+            background-color: #dabda9;
+            display: flex;
+            border-radius: 20px;
+            .reccContainer{
+                display: flex;
+                padding: 20px;
+                gap: 30px;
+                .title{
+                    font-family: Display Heavy;
+                    font-size: 2em;
+                    display: flex;
+                    align-items: center;
+                }
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #eee;
+                    border-radius: 10px;
+                    padding: 20px;
+                    span{
+                        font-size: 1.3em;
+                        font-family: Display Regular;
+                        color: #555;
+                    }
+                }
+            }
+        }
+    }
 }
