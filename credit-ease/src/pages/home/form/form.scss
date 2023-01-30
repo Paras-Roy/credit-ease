@@ -256,6 +256,36 @@ header h1 {
                         color: #555;
                     }
                 }
+
+                .btn {
+                    transition: background-color 200ms;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    border: none;
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                    font-family: Display Regular;
+                    font-size: 1.5em;
+                    color: white;
+                }
+        
+                .reset {
+                    background-color: black;
+                }
+        
+                .reset:hover {
+                    background-color: white;
+                }
+        
+                .submit {
+                    background-color: #6D27E8;
+                }
+        
+                .submit:hover {
+                    background-color: #6023caa5;
+                }
             }
         }
     }

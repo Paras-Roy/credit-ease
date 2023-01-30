@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import './form.scss'
 
 const Form = () => {
@@ -29,6 +29,7 @@ const Form = () => {
         event.preventDefault();
         setShowResult(false);
         formRef.current.reset();
+        setFormData({});
     };
 
     const getPreds = () => {
@@ -227,6 +228,7 @@ const Form = () => {
                             <div className="card">
                                 <span>{resultData.recc}</span>
                             </div>
+                                <div className="btn reset" onClick={handleReset}>Reset</div>
                         </div>
 
                     </div>
