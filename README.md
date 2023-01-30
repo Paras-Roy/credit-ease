@@ -18,7 +18,9 @@ Conventional credit scoring methods like credit history, collateral, or any prio
 All the fiiles are present in this repository 
 
 Demo Video Link- [https://youtu.be/vxzMeezDvuI](https://youtu.be/vxzMeezDvuI)  
-Other Useful links - [Data_analysis_Model_selection_hyperparams_tuning.ipynb](Data_analysis_Model_selection_hyperparams_tuning.ipynb)
+Other Useful links - [Data_analysis_Model_selection_hyperparams_tuning.ipynb](Data_analysis_Model_selection_hyperparams_tuning.ipynb)  
+                     [app.py](app.py) 
+                     
 ![credit ease](home.png)
 ![credit ease](form.png)
 ![credit ease](result.png)
