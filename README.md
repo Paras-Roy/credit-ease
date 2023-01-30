@@ -13,7 +13,7 @@ Conventional credit scoring methods like credit history, collateral, or any prio
 
 All the fiiles are present in this repository 
 
-Demo Video Link- [https://youtu.be/vxzMeezDvuI](https://link-url-here.org)
+Demo Video Link- [https://youtu.be/vxzMeezDvuI](https://youtu.be/vxzMeezDvuI)
 
 
 
