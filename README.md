@@ -5,11 +5,15 @@ Conventional credit scoring methods like credit history, collateral, or any prio
 
 ## Get a credit score using AI, even without a credit history.  
 Key Features of our Solution  
-1.
+1.Credit Score Prediction without credit or loan history, collateral, or any prior accounts information.
+2.AI based solution solution and generating a scoring metrics based on different parameters
+3.Providing the best Ai generated Recommendation to improve the Score according to person present conditions.
 
 
-All the fiiles are present in this repository  
-link- 
+
+All the fiiles are present in this repository 
+
+Demo Video Link- [https://youtu.be/vxzMeezDvuI](https://link-url-here.org)
 
 
 
