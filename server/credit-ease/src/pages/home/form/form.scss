@@ -262,6 +262,7 @@ header h1 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    justify-self: flex-end;
                     cursor: pointer;
                     border: none;
                     padding: 10px 30px;
@@ -277,6 +278,7 @@ header h1 {
         
                 .reset:hover {
                     background-color: white;
+                    color: black;
                 }
         
                 .submit {
