@@ -128,7 +128,7 @@ def find_my_nearest_people(x_help , y_pred , user_data):
     no_people = 5
     user_data = np.array(user_data)[0]
    
-    indexing = x_help.index[y_pred==0]
+    indexing = x_help.index[y_pred==1]
     li = find_my_nearest_people_help(x_help_array , y_pred_array , user_data , no_people,indexing)
     
     distances = [x[0] for x in li]
@@ -166,7 +166,7 @@ def take_input_and_predict():
     data1 = enterred_data(data_by_user)
     print(data1)
     data1 = refine_input(data1)
-    if clasify.predict(data1)[0]==1:
+    if clasify.predict(data1)[0]==0:
         return 0
         
     else:
@@ -185,7 +185,7 @@ def input_only():
 
 def _score(data):
     '''score predictor'''
-    scored = (clasify.predict_proba(data)[0][1])*100
+    scored = clasify.predict_proba(data)[0][1]*100
     if scored<25:
         return "Below Requirements"
     elif scored>25 and scored<55:
@@ -222,10 +222,10 @@ def run(inp):
     hh = df.loc[keys]
     if value==0:
         # return jsonify(value)
-        return 0,recommend(hh),scored
+        return value,recommend(hh),scored
     else:
         # return jsonify(value)
-        return 1,"No Need! Your score is good!",scored
+        return value,"congo! loan approved",scored
 #stuff ---------------------------------
 
 
