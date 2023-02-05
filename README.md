@@ -22,6 +22,7 @@ Demo Video Link-
 Other File links-  
 [Data_analysis_Model_selection_hyperparams_tuning.ipynb](Data_analysis_Model_selection_hyperparams_tuning.ipynb)  
 [app.py](app.py) 
+[hello_ulta_final.ipynb](hello_ulta_final.ipynb)
                      
 ![credit ease](home.png)
 ![credit ease](form.png)
